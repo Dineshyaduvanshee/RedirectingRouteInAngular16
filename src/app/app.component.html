@@ -1,2 +1,16 @@
-<app-student></app-student>
-<app-student-details></app-student-details>
+<div>
+    <div style="align-items: center;">
+        <h1 style="text-align: center; background-color: blueviolet;">!!Welcome to Indicosmic Pvt Ltd.!!</h1>
+        <h2 style="text-align: center;background-color: purple;">!! Redirecting Route in Example !!</h2>
+        <a [routerLink]="['/student']">Student</a>
+        <br>
+        <a [routerLink]="['/studentDetails']">Student Details</a>
+        <br>
+        <a [routerLink]="['/parentDetails']">Parent Details</a>
+        <br>
+        <br>
+        <button (click)="student()">Show Student</button>
+    <hr>
+    </div>
+    <router-outlet></router-outlet>
+</div>
